@@ -1,0 +1,112 @@
+{
+    "sendWelcomeMessage" : {
+        "category" : "LoadBusinessTemplate",
+        "template" : "welcome",
+        "subject" : "Welcome to my application",
+        "from" : "noreply@example.com",
+        "entities" : {
+            "name" : "required|string|notag"
+        }
+    },
+
+    "newSubscriber" : {
+        "category" : "LoadBusinessTemplate",
+        "template" : "new-subscriber",
+        "from" : "noreply@autofixer.com.ng",
+        "subject" : "Thank you for subscribing with AUTOFIXER",
+        "entities" : {
+            "name" : "required|string|notag"
+        }
+    },
+
+    "newRequest" : {
+        "category" : "LoadBusinessTemplate",
+        "template" : "service-request",
+        "from" : "noreply@autofixer.com.ng",
+        "subject" : "Thank you for your service request",
+        "entities" : {
+            "name" : "required|string|notag"
+        }
+    },
+
+    "newSubscriberAlert" : {
+        "category" : "LoadBusinessTemplate",
+        "template" : "new-subscriber-alert",
+        "from" : "noreply@autofixer.com.ng",
+        "entities" : {
+        }
+    },
+
+    "newContactAlert" : {
+        "category" : "LoadBusinessTemplate",
+        "template" : "new-contact-alert",
+        "from" : "noreply@autofixer.com.ng",
+        "entities" : {
+            "name" : "required|string|notag"
+        }
+    },
+
+    "newQuoteAlert" : {
+        "category" : "LoadBusinessTemplate",
+        "template" : "new-quote-alert",
+        "from" : "noreply@autofixer.com.ng",
+        "entities" : {
+            "name" : "required|string|notag"
+        }
+    },
+
+    "newRepairAlert" : {
+        "category" : "LoadBusinessTemplate",
+        "template" : "new-repair-alert",
+        "from" : "noreply@autofixer.com.ng",
+        "entities" : {
+            "name" : "required|string|notag"
+        }
+    },
+
+    "newDiagnosisAlert" : {
+        "category" : "LoadBusinessTemplate",
+        "template" : "new-diagnosis-alert",
+        "from" : "noreply@autofixer.com.ng",
+        "entities" : {
+            "name" : "required|string|notag"
+        }
+    },
+
+    "newMaintenanceAlert" : {
+        "category" : "LoadBusinessTemplate",
+        "template" : "new-maintenance-alert",
+        "from" : "noreply@autofixer.com.ng",
+        "entities" : {
+            "name" : "required|string|notag"
+        }
+    },
+
+    "newMechanicMessageAlert" : {
+        "category" : "LoadBusinessTemplate",
+        "template" : "new-mechanic-message-alert",
+        "from" : "noreply@autofixer.com.ng",
+        "entities" : {
+            "name" : "required|string|notag",
+            "message" : "required|string|notag"
+        }
+    },
+
+    "newJobAlert" : {
+        "category" : "LoadBusinessTemplate",
+        "template" : "new-mechanic-job-alert",
+        "from" : "noreply@autofixer.com.ng",
+        "entities" : {
+            "url" : "required|string|notag"
+        }
+    },
+
+    "cancellationJobAlert" : {
+        "category" : "LoadBusinessTemplate",
+        "template" : "cancel-mechanic-job-alert",
+        "from" : "noreply@autofixer.com.ng",
+        "entities" : {
+            "url" : "required|string|notag"
+        }
+    }
+}

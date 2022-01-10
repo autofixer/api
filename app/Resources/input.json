@@ -1,0 +1,133 @@
+[
+    {
+        "service" : "services",
+        "method" : "submit-diagnosis",
+        "version" : "*",
+        "verb" : "post",
+        "body" : {
+            "name" : "required|string|notag",
+            "email" : "required|email|notag",
+            "tel" : "required|string|notag",
+            "location" : "required|string|notag",
+            "car_make" : "required|string|notag",
+            "car_year" : "required|string|notag",
+            "review" : "required|string|notag"
+        }
+    },
+
+    {
+        "service" : "services",
+        "method" : "submit-maintenance",
+        "version" : "*",
+        "verb" : "post",
+        "body" : {
+            "name" : "required|string|notag",
+            "email" : "required|email|notag",
+            "tel" : "required|string|notag",
+            "location" : "required|string|notag",
+            "car_make" : "required|string|notag",
+            "car_year" : "required|string|notag",
+            "review" : "required|string|notag",
+            "subsribe_plan" : "required|string|notag",
+            "repair_date" : "required|string|notag",
+            "repair_time" : "required|string|notag"
+        }
+    },
+
+    {
+        "service" : "services",
+        "method" : "submit-repair",
+        "version" : "*",
+        "verb" : "post",
+        "body" : {
+            "name" : "required|string|notag",
+            "email" : "required|email|notag",
+            "tel" : "required|string|notag",
+            "location" : "required|string|notag",
+            "car_make" : "required|string|notag",
+            "car_year" : "required|string|notag",
+            "review" : "required|string|notag",
+            "onsite" : "string|notag",
+            "address" : "string|notag",
+            "repair_date" : "required|string|notag",
+            "repair_time" : "required|string|notag"
+        }
+    },
+
+    {
+        "service" : "services",
+        "method" : "submit-quote",
+        "version" : "*",
+        "verb" : "post",
+        "body" : {
+            "name" : "required|string|notag",
+            "email" : "required|email|notag",
+            "tel" : "required|string|notag",
+            "location" : "required|string|notag",
+            "model" : "required|string|notag",
+            "car_year" : "required|string|notag",
+            "manufacturerid" : "required|number|notag",
+            "issue" : "required|string|notag",
+            "service_type" : "required|string|notag",
+            "number_of_cars" : ["required|number", 1],
+            "mileage" : "required|string|notag"
+        }
+    },
+
+    {
+        "service" : "services",
+        "method" : "submit contact message",
+        "version" : "*",
+        "verb" : "post",
+        "body" : {
+            "name" : "required|string|notag",
+            "email" : "required|email|notag",
+            "tel" : "required|string|notag",
+            "review" : "required|string|notag"
+        }
+    },
+
+    {
+        "service" : "manufacturers",
+        "method" : "create",
+        "version" : "*",
+        "verb" : "post",
+        "body" : {
+            "name" : "required|string|notag|min:2",
+            "logo" : "required|string|notag|min:3",
+            "visible" : ["required|number", 0]
+        }
+    },
+
+    {
+        "service" : "services",
+        "method" : "sign up for newsletter",
+        "version" : "*",
+        "verb" : "post",
+        "body" : {
+            "email" : "required|email|notag|min:7"
+        }
+    },
+
+    {
+        "service" : "services",
+        "method" : "send job alert to mechanic",
+        "version" : "*",
+        "verb" : "post",
+        "body" : {
+            "url" : "required|string|notag|min:7"
+        }
+    },
+
+    {
+        "service" : "services",
+        "method" : "submit mechanic message",
+        "version" : "*",
+        "verb" : "post",
+        "body" : {
+            "review" : "required|string|notag|min:7",
+            "serviceid" : "required|number|notag|min:1",
+            "mechanicid" : "required|number|notag|min:1"
+        }
+    }
+]

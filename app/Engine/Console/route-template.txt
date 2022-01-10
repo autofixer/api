@@ -1,0 +1,15 @@
+    /**
+     * @method {CLASS} {METHOD}
+     * @param Request $request
+     * @param Response $response
+     * @return mixed
+     * 
+     * @start.doc
+     * 
+     * .. Your documentation content goes in here.
+     * 
+     */
+    public function {METHOD}(Request $request, Response $response)
+    {
+        $response->success('It works!');
+    }
